@@ -91,66 +91,70 @@
                 </div>
             </div>
         </section>
-                <div class="container">
-    <h1>Formulario de Preinscripción</h1>
-    <p class="subtitle">Completa todos los campos. Los marcados con * son obligatorios.</p>
+                
+            <div class="formulario-preinscripcion">
+            <h3>Formulario de Preinscripción</h3>
+            <p class="subtitulo">Completa todos los campos. Los marcados con * son obligatorios.</p>
 
-    <form id="formulario">
-      <div class="fila">
-        <div class="campo">
-          <label>Nombre completo *</label>
-          <input type="text" id="nombre" placeholder="Ej: María López García" required>
-        </div>
-        <div class="campo">
-          <label>Número de documento *</label>
-          <input type="text" id="documento" placeholder="Ej: 1234567890" required>
-        </div>
-      </div>
+            <form id="formulario">
+                <div class="fila">
+                <div class="campo">
+                    <label>Nombre completo *</label>
+                    <input type="text" id="nombre" placeholder="Ej: María López García" required>
+                </div>
+                <div class="campo">
+                    <label>Número de documento *</label>
+                    <input type="text" id="documento" placeholder="Ej: 1234567890" required>
+                </div>
+                </div>
 
-      <div class="fila">
-        <div class="campo">
-          <label>Correo electrónico *</label>
-          <input type="email" id="email" placeholder="ejemplo@correo.com" required>
-        </div>
-        <div class="campo">
-          <label>Teléfono / WhatsApp *</label>
-          <input type="tel" id="telefono" placeholder="Ej: 3001234567" required>
-        </div>
-      </div>
+                <div class="fila">
+                <div class="campo">
+                    <label>Correo electrónico *</label>
+                    <input type="email" id="email" placeholder="ejemplo@correo.com" required>
+                </div>
+                <div class="campo">
+                    <label>Teléfono / WhatsApp *</label>
+                    <input type="tel" id="telefono" placeholder="Ej: 3001234567" required>
+                </div>
+                </div>
 
-      <div class="campo">
-        <label>Carrera de interés *</label>
-        <select id="carrera" required>
-          <option value="">-- Selecciona una carrera --</option>
-          <option value="sistemas">Ingeniería de Sistemas</option>
-          <option value="admin">Administración de Empresas</option>
-          <option value="contaduria">Contaduría Pública</option>
-          <option value="psicologia">Psicología</option>
-          <option value="derecho">Derecho</option>
-        </select>
-      </div>
+                <div class="campo">
+                <label>Carrera de interés *</label>
+                <select id="carrera" required>
+                    <option value="">-- Selecciona una carrera --</option>
+                    <option value="sistemas">Ingeniería de Sistemas</option>
+                    <option value="admin">Administración de Empresas</option>
+                    <option value="contaduria">Contaduría Pública</option>
+                    <option value="psicologia">Psicología</option>
+                    <option value="derecho">Derecho</option>
+                </select>
+                </div>
 
-      <div class="fila">
-        <div class="campo">
-          <label>Modalidad preferida *</label>
-          <select id="modalidad" required>
-            <option value="">-- Selecciona --</option>
-            <option value="presencial">Presencial</option>
-            <option value="virtual">Virtual</option>
-            <option value="hibrida">Híbrida</option>
-          </select>
-        </div>
-        <div class="campo">
-          <label>Sede de preferencia</label>
-          <select id="sede">
-            <option value="">-- Selecciona (opcional) --</option>
-            <option value="bogota">Bogotá</option>
-            <option value="medellin">Medellín</option>
-            <option value="cali">Cali</option>
-          </select>
-        </div>
-      </div>
-      <button type="submit">Enviar preinscripción</button>
+                <div class="fila">
+                <div class="campo">
+                    <label>Modalidad preferida *</label>
+                    <select id="modalidad" required>
+                    <option value="">-- Selecciona --</option>
+                    <option value="presencial">Presencial</option>
+                    <option value="virtual">Virtual</option>
+                    <option value="hibrida">Híbrida</option>
+                    </select>
+                </div>
+                <div class="campo">
+                    <label>Sede de preferencia</label>
+                    <select id="sede">
+                    <option value="">-- Selecciona (opcional) --</option>
+                    <option value="bogota">Bogotá</option>
+                    <option value="medellin">Medellín</option>
+                    <option value="cali">Cali</option>
+                    </select>
+                </div>
+                </div>
+
+                <button type="submit" class="btn-enviar">Enviar preinscripción</button>
+            </form>
+            </div>
         <!-- Footer-->
         <footer class="py-5 bg-black">
             <div class="container px-5"><p class="m-0 text-center text-white small">Copyright &copy; Your Website 2023</p></div>

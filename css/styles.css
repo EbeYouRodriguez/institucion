@@ -365,94 +365,84 @@ select {
 select:disabled {
   opacity: 1;
 }
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: Arial, sans-serif;
-}
-
-body {
-  background: #f0f2f5;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
-  padding: 20px;
-}
-
-.container {
+/* ===== Formulario de Preinscripción ===== */
+.formulario-preinscripcion {
   background: white;
-  padding: 40px;
+  padding: 30px;
   border-radius: 12px;
-  box-shadow: 0 2px 12px rgba(0,0,0,0.1);
-  width: 100%;
-  max-width: 700px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  max-width: 480px;
+  margin: 0 auto;
 }
 
-h1 {
+.formulario-preinscripcion h3 {
   text-align: center;
-  margin-bottom: 8px;
-  font-size: 24px;
+  margin-bottom: 6px;
+  font-size: 22px;
+  color: #222;
 }
 
-.subtitle {
+.formulario-preinscripcion .subtitulo {
   text-align: center;
   color: #666;
-  font-size: 14px;
-  margin-bottom: 30px;
+  font-size: 13px;
+  margin-bottom: 25px;
 }
 
-.fila {
+.formulario-preinscripcion .fila {
   display: flex;
-  gap: 20px;
-  margin-bottom: 20px;
+  gap: 15px;
+  margin-bottom: 15px;
 }
 
-.campo {
+.formulario-preinscripcion .campo {
   flex: 1;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 }
 
-label {
+.formulario-preinscripcion label {
   display: block;
-  margin-bottom: 6px;
-  font-size: 14px;
-  font-weight: bold;
+  font-size: 13px;
+  font-weight: 600;
+  margin-bottom: 5px;
+  color: #333;
 }
 
-input, select {
+.formulario-preinscripcion input,
+.formulario-preinscripcion select {
   width: 100%;
-  padding: 11px 12px;
+  padding: 10px 12px;
   border: 1px solid #ccc;
   border-radius: 6px;
   font-size: 14px;
 }
 
-input:focus, select:focus {
+.formulario-preinscripcion input:focus,
+.formulario-preinscripcion select:focus {
   outline: none;
-  border-color: #4a90e2;
+  border-color: #2563eb;
 }
 
-button {
+.formulario-preinscripcion .btn-enviar {
   width: 100%;
-  padding: 13px;
+  padding: 12px;
   background: #2563eb;
   color: white;
   border: none;
   border-radius: 6px;
   font-size: 15px;
-  font-weight: bold;
+  font-weight: 600;
   cursor: pointer;
+  margin-top: 10px;
 }
 
-button:hover {
+.formulario-preinscripcion .btn-enviar:hover {
   background: #1d4ed8;
 }
 
-/* En celular se pone todo en una columna */
-@media (max-width: 600px) {
-  .fila {
+/* Responsive */
+@media (max-width: 576px) {
+  .formulario-preinscripcion .fila {
     flex-direction: column;
     gap: 0;
   }
